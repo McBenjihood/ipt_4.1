@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:lesson1": "vite previews/wetter_station/wetter_station.html --port 5174",
     "build": "vite build",
     "preview": "vite preview"
   },
