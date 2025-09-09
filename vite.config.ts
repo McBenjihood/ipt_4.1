@@ -1,3 +1,4 @@
+// vite.config.ts
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
@@ -13,6 +14,5 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
-    // This is the crucial part for GitHub Pages deployment
     base: '/ipt_4.1/'
 })
