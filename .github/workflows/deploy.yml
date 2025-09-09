@@ -11,6 +11,8 @@ jobs:
 
       - name: Installing node.js
         uses: actions/setup-node@v5
+        with:
+          node-version: '20'
 
       - name: Installing and build
         run: |
@@ -18,7 +20,8 @@ jobs:
           npm run build
 
       - name: Deploying to pages
-        uses: McBenjihood/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
           folder: dist
+          branch: gh-pages
 
