@@ -1,5 +1,5 @@
 name: Deploy
-run-name: ${{ github.actor }} is trying to deploy something with absolutely 0 success.
+run-name: starting deployment process...
 on: [push]
 
 permissions:
