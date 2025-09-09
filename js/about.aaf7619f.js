@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkipt_4_1"]=self["webpackChunkipt_4_1"]||[]).push([[594],{571:function(n,t,u){u.r(t),u.d(t,{default:function(){return o}});var a=u(641);const e={class:"about"};function r(n,t){return(0,a.uX)(),(0,a.CE)("div",e,[...t[0]||(t[0]=[(0,a.Lk)("h1",null,"This is an about page",-1)])])}var s=u(262);const c={},i=(0,s.A)(c,[["render",r]]);var o=i}}]);
+//# sourceMappingURL=about.aaf7619f.js.map
