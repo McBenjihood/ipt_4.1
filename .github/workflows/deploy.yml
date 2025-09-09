@@ -1,6 +1,10 @@
 name: Deploy
 run-name: ${{ github.actor }} is trying to deploy something with absolutely 0 success.
 on: [push]
+
+permissions:
+  contents: write
+
 jobs:
   deploy-vue-project:
     runs-on: ubuntu-latest
