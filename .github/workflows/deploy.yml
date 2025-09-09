@@ -9,14 +9,13 @@ jobs:
   deploy-vue-project:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "The job was automatically triggered by a ${{ github.event_name }}."
       - name: Check out repository code
         uses: actions/checkout@v5
 
       - name: Installing node.js
         uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Installing and build
         run: |
