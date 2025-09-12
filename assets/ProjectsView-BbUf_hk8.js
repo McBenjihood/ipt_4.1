@@ -1,0 +1,1 @@
+import{_ as t,c as o,a as s,o as c}from"./index-ex9d5_4C.js";const n={},r={class:"displayViewContent"};function a(i,e){return c(),o("div",r,[...e[0]||(e[0]=[s("h1",null,"Project View",-1)])])}const l=t(n,[["render",a]]);export{l as default};
