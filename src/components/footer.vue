@@ -2,7 +2,14 @@
 import { onMounted, ref } from 'vue'
 const api_url = '/quotes/quotes'
 
-const quoteArray = ref([])
+// 1. Define the interface for the quote object
+interface Quote {
+  q: string;
+  a: string;
+}
+
+// 2. Use the interface to type the ref
+const quoteArray = ref<Quote[]>([])
 
 onMounted(async () => {
   try {
@@ -15,6 +22,8 @@ onMounted(async () => {
 })
 
 function getRandomInt(max: number) {
+  // A small safety check for when the array isn't populated yet
+  if (max === 0) return 0;
   return Math.floor(Math.random() * max)
 }
 
@@ -22,19 +31,24 @@ let quote = ref("");
 let author = ref("");
 
 function PrintQuote(){
-  const rnd = getRandomInt(50);
+  // Pass the actual length of the array
+  const rnd = getRandomInt(quoteArray.value.length);
   quote.value = retrieveQuote(rnd);
   author.value = retrieveQuoteAuthor(rnd);
 }
-function retrieveQuote(index: number){
+
+function retrieveQuote(index: number): string { // Good to add return types
   if (quoteArray.value && quoteArray.value.length > 0) {
-    //return quoteArray.value[index].q
+    // TypeScript now knows .q exists!
+    return quoteArray.value[index].q
   }
   return 'Loading...'
 }
-function retrieveQuoteAuthor(index: number){
+
+function retrieveQuoteAuthor(index: number): string { // Good to add return types
   if (quoteArray.value && quoteArray.value.length > 0) {
-    //return quoteArray.value[index].a
+    // TypeScript now knows .a exists!
+    return quoteArray.value[index].a
   }
   return 'Loading...'
 }
