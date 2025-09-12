@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import importHeader from '/src/components/header.vue'
-import importContent from '/src/components/content.vue'
-import importFooter from '/src/components/footer.vue'
+import Header from '@/components/header.vue';
+import Content from '@/components/content.vue';
+import Footer from '@/components/footer.vue';
 </script>
 
 <template>
   <div class="display">
-    <import-header />
-    <import-content class="content" />
-    <import-footer />
+    <Header></Header>
+    <Content class="content" />
+    <Footer />
   </div>
 </template>
 
