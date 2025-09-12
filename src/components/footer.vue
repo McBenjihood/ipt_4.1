@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-const api_url = '/quotes/quotes'
+const api_url = 'https://zenquotes.io/api/quotes/'
 
 // 1. Define the interface for the quote object
 interface Quote {
