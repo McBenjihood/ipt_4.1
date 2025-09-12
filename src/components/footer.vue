@@ -28,13 +28,13 @@ function PrintQuote(){
 }
 function retrieveQuote(index: number){
   if (quoteArray.value && quoteArray.value.length > 0) {
-    return quoteArray.value[index].q
+    //return quoteArray.value[index].q
   }
   return 'Loading...'
 }
 function retrieveQuoteAuthor(index: number){
   if (quoteArray.value && quoteArray.value.length > 0) {
-    return quoteArray.value[index].a
+    //return quoteArray.value[index].a
   }
   return 'Loading...'
 }
