@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  background-color: rgb(12, 12, 22);
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.box,
+header,
+#contentBar,
+footer {
+  background-color: #111136;
+  border: 2px solid #1f1f64;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+#contentBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+.routerNavWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  flex-grow: 1;
+}
+
+.routerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.RouterLinkClass {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.RouterLinkClass p {
+  margin: 0;
+}
+
+.RouterLinkClass > img {
+  height: 1.5em;
+  margin-left: 0.5em;
+}
+
+.routerNav hr {
+  margin: 0;
+  padding: 0;
+  width: 110%;
+  transition: width 0.2s ease-in-out;
+  border: 2px white solid;
+}
+
+.RouterLinkClass:hover + hr {
+  width: 120%;
+}
+
+footer {
+  display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  margin-top: 0;
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.display-none {
+  display: none;
+}
+.displayViewContent {
+  margin: 10px;
+  padding: 10px 30px;
+}
